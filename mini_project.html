@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> mini_project</title>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="mini_project.css"/>
+        <script src="mini_project.js"></script>
+        <meta name="description" content="intro to js html and css"/>
+        <meta name="keywords" content="coursera" />
+        <meta name="author" content="Bishal kumar"/>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+    </head>
+    <body>
+        <!-- <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script> -->
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" ></script>
+        <div class="container">
+          <div id="header"  class="box">
+              <div id="image_change_box">  
+                  <canvas id="can1" class="box1"></canvas>
+                  <canvas id="can2" class="box1"></canvas>
+              </div>
+          </div>
+          <div id="footer" class="box">
+            <div class="controls">
+                <label for="forgimg">Forground image:</label>
+                <input id="forgimg"  type="file" accept="image/*" multiple="false" onchange="forImg()">
+
+                <label for="backimg">Background image:</label>
+                <input id="backimg" type="file" accept="image/*" multiple="false" onchange="bacImg()">
+
+
+                <hr/>
+                <input id="merge" type="button" onclick="greenScreen()" value="merge Image" >
+                <input id="clear_can" type="button" onclick="clearImages()" value="clear canvas" >
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
